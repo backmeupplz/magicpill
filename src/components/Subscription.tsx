@@ -2,6 +2,7 @@ import React, { FC, useState } from 'react'
 import { classnames } from 'classnames/tailwind'
 import SubscriptionButton from 'components/SubscriptionButton'
 import { TierDescription } from 'models/Tier'
+import { FormattedMessage } from 'react-intl'
 
 const container = classnames('rounded', 'my-4', 'bg-gradient-to-br', 'p-6')
 const headerContainer = classnames(
@@ -41,12 +42,18 @@ const Subscription: FC<SubscriptionProps> = ({ tier }) => {
     <div className={classnames(container, ...tier.gradient)}>
       <div className={headerContainer}>
         <div>
-          <p className={header}>{tier.title}</p>
-          <p className={price}>ЦЕНА:</p>
+          <p className={header}>
+            <FormattedMessage id={`${tier.title}Title`} />
+          </p>
+          <p className={price}>
+            <FormattedMessage id="price" />:
+          </p>
         </div>
-        <img className={image} src={`images/${tier.image}.png`} alt="avatar" />
+        <img className={image} src={`images/${tier.title}.png`} alt="avatar" />
       </div>
-      <p className={subheader}>{tier.price}</p>
+      <p className={subheader}>
+        <FormattedMessage id={`${tier.title}Price`} />
+      </p>
       <ul className={list}>
         {tier.benefits.map((benefit) => (
           <li key={benefit.title} className={bodyText}>
@@ -57,7 +64,7 @@ const Subscription: FC<SubscriptionProps> = ({ tier }) => {
               rel="noreferrer"
               href={benefit.source}
             >
-              источник
+              <FormattedMessage id="source" />
             </a>
           </li>
         ))}

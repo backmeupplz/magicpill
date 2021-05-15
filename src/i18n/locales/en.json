@@ -12,5 +12,17 @@
   "footer1": "open-source",
   "footer2": ". It was made by ",
   "footer3": " and ",
-  "footer4": " with love."
+  "footer4": " with love.",
+  "price": "PRICE",
+  "bronzeTitle": "Bronze",
+  "bronzePrice": "Not eating processed meat (including poultry)",
+  "silverTitle": "Silver",
+  "silverPrice": "Previous level + not eating red meat",
+  "goldTitle": "Gold",
+  "goldPrice": "Previous level + not eating unprocessed poultry (pescetarianism)",
+  "platinumTitle": "Platinum",
+  "platinumPrice": "Previous level + not eating fish and seafood (lacto, lacto-ovo and ovo vegetarianism)",
+  "diamondTitle": "Diamond",
+  "diamondPrice": "Giving up eating animal products completely",
+  "source": "source"
 }

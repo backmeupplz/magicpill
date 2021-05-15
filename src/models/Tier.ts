@@ -10,8 +10,6 @@ enum Tier {
 
 export interface TierDescription {
   title: string
-  price: string
-  image: string
   gradient: TArg[]
   benefits: {
     title: string
@@ -21,9 +19,7 @@ export interface TierDescription {
 
 export const tiers: { [index: string]: TierDescription } = {
   [Tier.bronze]: {
-    title: 'Бронза',
-    price: 'Отказ от переработанного мяса (в том числе птицы)',
-    image: Tier.bronze,
+    title: Tier.bronze,
     gradient: ['from-bronze-semifull', 'to-bronze-semitransparent'],
     benefits: [
       {
@@ -41,9 +37,7 @@ export const tiers: { [index: string]: TierDescription } = {
     ],
   },
   [Tier.silver]: {
-    title: 'Серебро',
-    price: 'Предыдущий уровень + отказ от красного мяса',
-    image: Tier.silver,
+    title: Tier.silver,
     gradient: ['from-silver-semifull', 'to-silver-semitransparent'],
     benefits: [
       {
@@ -79,9 +73,7 @@ export const tiers: { [index: string]: TierDescription } = {
     ],
   },
   [Tier.gold]: {
-    title: 'Золото',
-    price: 'Предыдущий уровень + отказ от мяса птицы (пескетарианство)',
-    image: Tier.gold,
+    title: Tier.gold,
     gradient: ['from-gold-semifull', 'to-gold-semitransparent'],
     benefits: [
       {
@@ -99,10 +91,7 @@ export const tiers: { [index: string]: TierDescription } = {
     ],
   },
   [Tier.platinum]: {
-    title: 'Платина',
-    price:
-      'Предыдущий уровень + отказ от рыбы и морепродуктов (лакто, лакто-ово и ово вегетарианство)',
-    image: Tier.platinum,
+    title: Tier.platinum,
     gradient: ['from-platinum-semifull', 'to-platinum-semitransparent'],
     benefits: [
       {
@@ -124,9 +113,7 @@ export const tiers: { [index: string]: TierDescription } = {
     ],
   },
   [Tier.diamond]: {
-    title: 'Бриллиант',
-    price: 'Отказ от всех продуктов животного происхождения',
-    image: Tier.diamond,
+    title: Tier.diamond,
     gradient: ['from-diamond-semifull', 'to-diamond-semitransparent'],
     benefits: [
       {
