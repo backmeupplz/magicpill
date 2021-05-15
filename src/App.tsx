@@ -6,6 +6,7 @@ import { classnames } from 'classnames/tailwind'
 import Root from 'components/Root'
 import Footer from 'components/Footer'
 import Subscriptions from 'components/Subscriptions'
+import { FormattedMessage } from 'react-intl'
 
 const textBlock = classnames('my-6')
 const subscriptionBlock = classnames('my-12')
@@ -15,43 +16,25 @@ const App = () => {
     <IntlProvider>
       <Root>
         <LanguageButtons />
-        <HeaderText>Магическая пилюля</HeaderText>
+        <HeaderText>
+          <FormattedMessage id="title" />
+        </HeaderText>
         <SubheaderText>
-          Представьте, что у вас есть лекарство, принимая которое раз в день, вы
-          сильно уменьшите риски умереть
+          <FormattedMessage id="subtitle" />
         </SubheaderText>
         <div className={textBlock}>
-          <BodyText>
-            А теперь представьте, что это лекарство абсолютно бесплатно и
-            доступно всем! Звучит слишком хорошо, чтобы быть правдой.
-          </BodyText>
-          <BodyText>
-            Однако наука однозначна. Нет никаких сомнений в том, что это
-            магическое лекарство найдено. Простые изменения диеты могут спасти
-            вас и ваших близких от топ-10 заболеваний, которые убивают людей по
-            всему миру.
-          </BodyText>
-          <BodyText>
-            Выберите "подписку на здоровье" ниже, которая подойдет вашей
-            жизненной ситуации лучше всего. Чем элитнее подписка, тем меньше
-            риски умереть.
-          </BodyText>
-          <BodyText>
-            Не верьте на слово никому — всегда проверяйте исследования и читайте
-            источники самостоятельно.
-          </BodyText>
-          <BodyText>
-            Помните, как табачная индустрия пыталась доказать, что курение —
-            полезно? Мы находимся точно в той же ситуации сейчас. Наука уже
-            однозначна о вреде определенной группы продуктов, но до общества это
-            еще не дошло.
-          </BodyText>
+          {[0, 1, 2, 3, 4].map((v) => (
+            <BodyText key={v}>
+              <FormattedMessage id={`description${v}`} />
+            </BodyText>
+          ))}
         </div>
         <SubheaderText>
-          Приведенные ниже бенефиты научно доказаны, мы добавили ссылки на
-          реальные проверенные исследования
+          <FormattedMessage id="subdescription" />
         </SubheaderText>
-        <HeaderText>Подписки на здоровье</HeaderText>
+        <HeaderText>
+          <FormattedMessage id="subscriptions" />
+        </HeaderText>
         <div className={subscriptionBlock}>
           <Subscriptions />
         </div>

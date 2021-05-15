@@ -1,3 +1,16 @@
 {
-  "title": "Frontend Template"
+  "title": "Magic pill",
+  "subtitle": "Imagine if you had a remedy which when taken daily decreases your chances of death",
+  "description0": "Now imagine that this cure is completely free and available to everyone! Sounds too good to be true.",
+  "description1": "However, the science is unequivocal. There is no doubt that this magical cure has been found. Simple dietary changes can save you and your loved ones from the top 10 diseases that are killing people around the world.",
+  "description2": "Choose the \"health subscription\" below that fits your life situation best. The more elite the subscription, the lower the risks of dying.",
+  "description3": "Don't take anyone's word for it - always check the research and read the sources yourself.",
+  "description4": "Remember when the tobacco industry tried to prove that smoking was healthy? We are in exactly the same situation now. The science is already unequivocal about the harms of a certain group of products, but it hasn't gotten to the public yet.",
+  "subdescription": "The benefits below are scientifically proven, and we have added links to real, verified studies",
+  "subscriptions": "Health subscriptions",
+  "footer0": "Thank you for reading! This website is ",
+  "footer1": "open-source",
+  "footer2": ". It was made by ",
+  "footer3": " and ",
+  "footer4": " with love."
 }
