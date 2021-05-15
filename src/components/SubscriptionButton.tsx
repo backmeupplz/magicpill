@@ -1,5 +1,6 @@
 import { classnames } from 'classnames/tailwind'
 import React, { FC } from 'react'
+import { FormattedMessage } from 'react-intl'
 
 type SubscriptionButtonProps = {
   onClick: () => void
@@ -24,7 +25,7 @@ const buttonStyle = classnames(
 const SubscriptionButton: FC<SubscriptionButtonProps> = ({ onClick }) => {
   return (
     <button className={buttonStyle} onClick={onClick}>
-      Подписаться
+      <FormattedMessage id="subscribe" />
     </button>
   )
 }

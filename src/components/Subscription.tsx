@@ -55,15 +55,10 @@ const Subscription: FC<SubscriptionProps> = ({ tier }) => {
         <FormattedMessage id={`${tier.title}Price`} />
       </p>
       <ul className={list}>
-        {tier.benefits.map((benefit) => (
-          <li key={benefit.title} className={bodyText}>
-            {benefit.title}{' '}
-            <a
-              className={link}
-              target="_blank"
-              rel="noreferrer"
-              href={benefit.source}
-            >
+        {tier.benefits.map((benefit, i) => (
+          <li key={i} className={bodyText}>
+            <FormattedMessage id={`${tier.title}Benefit${i}`} />{' '}
+            <a className={link} target="_blank" rel="noreferrer" href={benefit}>
               <FormattedMessage id="source" />
             </a>
           </li>
@@ -71,8 +66,7 @@ const Subscription: FC<SubscriptionProps> = ({ tier }) => {
       </ul>
       {isSelected ? (
         <p className={bodyText}>
-          На самом деле, подписка абсолютно бесплатна! Просто откажитесь от
-          продуктов, перечисленных выше, и вы получите все обещанные бенефиты!
+          <FormattedMessage id="subscribed" />
         </p>
       ) : (
         <SubscriptionButton
