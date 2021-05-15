@@ -1,6 +1,6 @@
-# Frontend code template in React
+# Magic Pill website
 
-This template to be used for frontend applications. As opposed to [the previous one](https://github.com/backmeupplz/frontend-starter) written in Vue, this one uses React and Tailwind CSS.
+Website with a list of simple lifestyle changes that can reduce varous risks in humans.
 
 ## Available Scripts
 
