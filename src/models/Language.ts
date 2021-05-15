@@ -1,6 +1,7 @@
 enum Language {
   en = 'en',
   ru = 'ru',
+  uk = 'uk',
 }
 
 export function flagForLanguage(language: Language) {
@@ -9,6 +10,8 @@ export function flagForLanguage(language: Language) {
       return '🇬🇧'
     case Language.ru:
       return '🇷🇺'
+    case Language.uk:
+      return '🇺🇦'
   }
 }
 
