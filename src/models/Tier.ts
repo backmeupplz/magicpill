@@ -10,6 +10,7 @@ enum Tier {
 
 export interface TierDescription {
   title: string
+  price: string[]
   gradient: TArg[]
   benefits: string[]
 }
@@ -17,6 +18,7 @@ export interface TierDescription {
 export const tiers: { [index: string]: TierDescription } = {
   [Tier.bronze]: {
     title: Tier.bronze,
+    price: ['bronzePrice1', 'processedMeat', 'bronzePrice2'],
     gradient: ['from-bronze-semifull', 'to-bronze-semitransparent'],
     benefits: [
       'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3483430',
@@ -26,6 +28,7 @@ export const tiers: { [index: string]: TierDescription } = {
   },
   [Tier.silver]: {
     title: Tier.silver,
+    price: ['silverPrice1', 'redMeat'],
     gradient: ['from-silver-semifull', 'to-silver-semitransparent'],
     benefits: [
       'https://pubmed.ncbi.nlm.nih.gov/27557655',
@@ -39,6 +42,7 @@ export const tiers: { [index: string]: TierDescription } = {
   },
   [Tier.gold]: {
     title: Tier.gold,
+    price: ['goldPrice1', 'unprocessedMeat', 'goldPrice2'],
     gradient: ['from-gold-semifull', 'to-gold-semitransparent'],
     benefits: [
       'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5216044',
@@ -48,6 +52,7 @@ export const tiers: { [index: string]: TierDescription } = {
   },
   [Tier.platinum]: {
     title: Tier.platinum,
+    price: ['platinumPrice1', 'seafood', 'platinumPrice2'],
     gradient: ['from-platinum-semifull', 'to-platinum-semitransparent'],
     benefits: [
       'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5216044',
@@ -58,6 +63,7 @@ export const tiers: { [index: string]: TierDescription } = {
   },
   [Tier.diamond]: {
     title: Tier.diamond,
+    price: ['diamondPrice'],
     gradient: ['from-diamond-semifull', 'to-diamond-semitransparent'],
     benefits: [
       'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5216044',
