@@ -17,7 +17,8 @@ const languageButton = classnames(
   'mx-1',
   'text-4xl',
   'rounded',
-  'hover:bg-green-button-start'
+  'hover:bg-green-button-start',
+  'text-white'
 )
 
 export default function LanguageButtons() {
