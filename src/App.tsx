@@ -3,8 +3,9 @@ import { BodyText, HeaderText, SubheaderText } from 'components/Text'
 import IntlProvider from 'i18n/IntlProvider'
 import LanguageButtons from 'components/LanguageButtons'
 import { classnames } from 'classnames/tailwind'
-import Subscription from 'components/Subscription'
 import Root from 'components/Root'
+import Footer from 'components/Footer'
+import Subscriptions from 'components/Subscriptions'
 
 const textBlock = classnames('my-6')
 const subscriptionBlock = classnames('my-12')
@@ -52,10 +53,9 @@ const App = () => {
         </SubheaderText>
         <HeaderText>Подписки на здоровье</HeaderText>
         <div className={subscriptionBlock}>
-          <Subscription />
-          <Subscription />
-          <Subscription />
+          <Subscriptions />
         </div>
+        <Footer />
       </Root>
     </IntlProvider>
   )

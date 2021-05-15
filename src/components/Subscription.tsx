@@ -1,15 +1,9 @@
-import React, { useState } from 'react'
+import React, { FC, useState } from 'react'
 import { classnames } from 'classnames/tailwind'
 import SubscriptionButton from 'components/SubscriptionButton'
+import { TierDescription } from 'models/Tier'
 
-const container = classnames(
-  'rounded',
-  'my-4',
-  'bg-gradient-to-br',
-  'from-bronze-semifull',
-  'to-bronze-semitransparent',
-  'p-6'
-)
+const container = classnames('rounded', 'my-4', 'bg-gradient-to-br', 'p-6')
 const headerContainer = classnames(
   'flex',
   'flex-row',
@@ -36,55 +30,37 @@ const link = classnames('text-green-source')
 const bodyText = classnames('text-white')
 const list = classnames('list-inside', 'list-disc', 'my-6')
 
-function Subscription() {
+type SubscriptionProps = {
+  tier: TierDescription
+}
+
+const Subscription: FC<SubscriptionProps> = ({ tier }) => {
   const [isSelected, setIsSelected] = useState(false)
 
   return (
-    <div className={container}>
+    <div className={classnames(container, ...tier.gradient)}>
       <div className={headerContainer}>
         <div>
-          <p className={header}>Бронза</p>
+          <p className={header}>{tier.title}</p>
           <p className={price}>ЦЕНА:</p>
         </div>
-        <img className={image} src="images/bronze.png" alt="avatar" />
+        <img className={image} src={`images/${tier.image}.png`} alt="avatar" />
       </div>
-      <p className={subheader}>
-        Отказ от переработанного мяса (в том числе птицы)
-      </p>
+      <p className={subheader}>{tier.price}</p>
       <ul className={list}>
-        <li className={bodyText}>
-          Снижение риска ишемической болезни сердца на 84%{' '}
-          <a
-            className={link}
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3483430/"
-          >
-            источник
-          </a>
-        </li>
-        <li className={bodyText}>
-          Снижение риска диабета II типа на 51%{' '}
-          <a
-            className={link}
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3483430/"
-          >
-            источник
-          </a>
-        </li>
-        <li className={bodyText}>
-          Снижение риска колоректального рака на 35%{' '}
-          <a
-            className={link}
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2661797/"
-          >
-            источник
-          </a>
-        </li>
+        {tier.benefits.map((benefit) => (
+          <li key={benefit.title} className={bodyText}>
+            {benefit.title}{' '}
+            <a
+              className={link}
+              target="_blank"
+              rel="noreferrer"
+              href={benefit.source}
+            >
+              источник
+            </a>
+          </li>
+        ))}
       </ul>
       {isSelected ? (
         <p className={bodyText}>
