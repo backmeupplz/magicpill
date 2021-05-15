@@ -10,7 +10,7 @@ const headerText = classnames(
   'md:text-6xl',
   'font-bold',
   'text-center',
-  'mb-6'
+  'mb-3'
 )
 export const HeaderText: FC = ({ children }) => {
   return <p className={headerText}>{children}</p>
@@ -22,13 +22,13 @@ const subheaderText = classnames(
   'md:text-2xl',
   'font-bold',
   'text-center',
-  'my-12'
+  'mb-3'
 )
 export const SubheaderText: FC = ({ children }) => {
   return <p className={subheaderText}>{children}</p>
 }
 
-const bodyText = classnames(grayText, 'text-center')
+const bodyText = classnames(grayText, 'mb-2')
 export const BodyText: FC = ({ children }) => {
   return <p className={bodyText}>{children}</p>
 }

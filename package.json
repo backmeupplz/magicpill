@@ -12,7 +12,7 @@
     "react-dom": "^17.0.2",
     "react-intl": "^5.17.5",
     "react-scripts": "4.0.3",
-    "tailwindcss-classnames": "^2.0.7",
+    "tailwindcss-classnames": "^2.1.2",
     "unfetch": "^4.2.0"
   },
   "scripts": {

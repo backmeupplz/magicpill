@@ -1,19 +1,38 @@
 import React from 'react'
-import Language from 'models/Language'
+import Language, { flagForLanguage } from 'models/Language'
 import AppStore from 'stores/AppStore'
-import Button from 'components/Button'
+import { classnames } from 'classnames/tailwind'
+
+const container = classnames(
+  'flex',
+  'flex-row',
+  'items-center',
+  'justify-center',
+  'mb-4'
+)
+const languageButton = classnames(
+  'py-2',
+  'px-4',
+  'focus:outline-none',
+  'mx-1',
+  'text-4xl',
+  'rounded',
+  'hover:bg-green-button-start'
+)
 
 export default function LanguageButtons() {
   return (
-    <div>
+    <div className={container}>
       {Object.values(Language).map((k) => (
-        <Button
+        <button
+          className={languageButton}
           key={k}
           onClick={() => {
             AppStore.language = k
           }}
-          title={k}
-        />
+        >
+          {flagForLanguage(k)}
+        </button>
       ))}
     </div>
   )

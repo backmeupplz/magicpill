@@ -5,28 +5,26 @@ module.exports = {
     extend: {
       colors: {
         black: {
-          background: '#040404',
-          'background-purpose': '#12141D',
-          'perk-gradient-light': 'rgba(4, 6, 14, 0.9)',
-          'perk-gradient-dark': '#04060E',
+          background: '#081420',
         },
-        gold: {
-          dark: '#FA6641',
-          light: '#EAE100',
+        bronze: {
+          full: 'rgb(238,141,81)',
+          semifull: 'rgba(238, 141, 81, 0.3)',
+          semitransparent: 'rgba(198, 198, 198, 0.1)',
         },
-      },
-      borderRadius: {
-        avatar: '6rem',
-      },
-      width: {
-        chart: '108px',
-        time: '95px',
-        glass: '107px',
+        green: {
+          source: '#59E0C0',
+          'button-start': 'rgba(89, 224, 192, 0.06)',
+          'button-end': 'rgba(14, 200, 132, 0.06)',
+        },
       },
     },
     container: {
       center: true,
       padding: '2rem',
+    },
+    borderRadius: {
+      DEFAULT: '1.5rem',
     },
   },
 }
