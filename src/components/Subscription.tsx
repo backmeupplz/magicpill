@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react'
 import { classnames } from 'classnames/tailwind'
 import SubscriptionButton from 'components/SubscriptionButton'
-import { TierDescription } from 'models/Tier'
+import Tier, { TierDescription } from 'models/Tier'
 import { FormattedMessage } from 'react-intl'
 
 const container = classnames('rounded', 'my-4', 'bg-gradient-to-br', 'p-6')
@@ -55,6 +55,11 @@ const Subscription: FC<SubscriptionProps> = ({ tier }) => {
         <FormattedMessage id={`${tier.title}Price`} />
       </p>
       <ul className={list}>
+        {tier.title !== Tier.bronze && (
+          <li className={bodyText}>
+            <FormattedMessage id="allAbove" />
+          </li>
+        )}
         {tier.benefits.map((benefit, i) => (
           <li key={i} className={bodyText}>
             <FormattedMessage id={`${tier.title}Benefit${i}`} />{' '}
