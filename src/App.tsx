@@ -7,7 +7,7 @@ import Root from 'components/Root'
 import Footer from 'components/Footer'
 import Subscriptions from 'components/Subscriptions'
 import { FormattedMessage } from 'react-intl'
-import ReactTooltip from 'react-tooltip';
+import ReactTooltip from 'react-tooltip'
 
 const textBlock = classnames('my-6')
 const subscriptionBlock = classnames('my-12')

@@ -53,7 +53,7 @@ const Subscription: FC<SubscriptionProps> = ({ tier }) => {
         <img className={image} src={`images/${tier.title}.png`} alt="avatar" />
       </div>
       <p className={subheader}>
-        {tier.price.map(priceKey => <><FormattedMessageWithTooltip id={priceKey} />&nbsp;</>)}
+        {tier.price.map(priceKey => <><FormattedMessageWithTooltip id={priceKey} />{' '}</>)}
       </p>
       <ul className={list}>
         {tier.title !== Tier.bronze && (

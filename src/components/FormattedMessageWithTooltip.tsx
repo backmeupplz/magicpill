@@ -1,6 +1,6 @@
-import { classnames } from 'classnames/tailwind';
+import { classnames } from 'classnames/tailwind'
 import React from 'react'
-import { FormattedMessage, useIntl } from 'react-intl';
+import { FormattedMessage, useIntl } from 'react-intl'
 
 const defenitionsDictionary: Record<string, string> = {
   'processedMeat': 'processedMeatDefinition',
@@ -16,7 +16,7 @@ const actionContainer = classnames(
   'border-gray-400'
 )
 
-interface FormattedMessageWithTooltipProps {
+type FormattedMessageWithTooltipProps = {
   id: string
 }
 
