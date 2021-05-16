@@ -7,13 +7,19 @@ import Root from 'components/Root'
 import Footer from 'components/Footer'
 import Subscriptions from 'components/Subscriptions'
 import { FormattedMessage } from 'react-intl'
+import ReactTooltip from 'react-tooltip';
 
 const textBlock = classnames('my-6')
 const subscriptionBlock = classnames('my-12')
+const tooltip = classnames(
+  'w-72',
+  'rounded',
+)
 
 const App = () => {
   return (
     <IntlProvider>
+      <ReactTooltip className={tooltip} textColor="black" backgroundColor="white" />
       <Root>
         <LanguageButtons />
         <HeaderText>
