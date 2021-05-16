@@ -5,10 +5,12 @@ import { observer } from 'mobx-react-lite'
 import AppStore from 'stores/AppStore'
 import en from 'i18n/locales/en.json'
 import ru from 'i18n/locales/ru.json'
+import uk from 'i18n/locales/uk.json'
 
 const messages = {
   en,
   ru,
+  uk,
 }
 
 const IntlProvider: FC = ({ children }) => {
