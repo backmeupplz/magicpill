@@ -10,7 +10,8 @@ const headerText = classnames(
   'md:text-6xl',
   'font-bold',
   'text-center',
-  'mb-3'
+  'mb-3',
+  'break-all'
 )
 export const HeaderText: FC = ({ children }) => {
   return <p className={headerText}>{children}</p>
