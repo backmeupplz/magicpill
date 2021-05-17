@@ -7,12 +7,14 @@ import en from 'i18n/locales/en.json'
 import ru from 'i18n/locales/ru.json'
 import uk from 'i18n/locales/uk.json'
 import de from 'i18n/locales/de.json'
+import pl from 'i18n/locales/pl.json'
 
 const messages = {
   en,
   ru,
   uk,
   de,
+  pl,
 }
 
 const IntlProvider: FC = ({ children }) => {
