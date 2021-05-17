@@ -28,7 +28,7 @@ export const tiers: { [index: string]: TierDescription } = {
   },
   [Tier.silver]: {
     title: Tier.silver,
-    price: ['silverPrice1', 'redMeat'],
+    price: ['silverPrice1', 'redMeat', 'silverPrice2'],
     gradient: ['from-silver-semifull', 'to-silver-semitransparent'],
     benefits: [
       'https://pubmed.ncbi.nlm.nih.gov/27557655',
