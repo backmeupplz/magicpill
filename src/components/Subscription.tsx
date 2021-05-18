@@ -3,6 +3,7 @@ import { classnames } from 'classnames/tailwind'
 import SubscriptionButton from 'components/SubscriptionButton'
 import Tier, { TierDescription } from 'models/Tier'
 import { FormattedMessage } from 'react-intl'
+import FormattedMessageWithTooltip from './FormattedMessageWithTooltip'
 
 const container = classnames('rounded', 'my-4', 'bg-gradient-to-br', 'p-6')
 const headerContainer = classnames(
@@ -52,7 +53,7 @@ const Subscription: FC<SubscriptionProps> = ({ tier }) => {
         <img className={image} src={`images/${tier.title}.png`} alt="avatar" />
       </div>
       <p className={subheader}>
-        <FormattedMessage id={`${tier.title}Price`} />
+        {tier.price.map(priceKey => <><FormattedMessageWithTooltip id={priceKey} />{' '}</>)}
       </p>
       <ul className={list}>
         {tier.title !== Tier.bronze && (
