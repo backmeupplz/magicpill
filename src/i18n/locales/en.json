@@ -21,8 +21,7 @@
   "silverPrice1": "Previous level + not eating",
   "silverPrice2": " ",
   "goldTitle": "Gold",
-  "goldPrice1": "Previous level + not eating",
-  "goldPrice2": "(pescetarianism)",
+  "goldPrice": "Previous level + not eating unprocessed poultry (pescetarianism)",
   "platinumTitle": "Platinum",
   "platinumPrice1": "Previous level + not eating fish and",
   "platinumPrice2": "(lacto, lacto-ovo and ovo vegetarianism)",
@@ -56,11 +55,9 @@
   "diamondBenefit5": "67% reduction in risk of high blood pressure",
   "allAbove": "All the benefits above plus:",
   "processedMeat": "processed meat",
-  "processedMeatDefinition": "Is meat that has been preserved by curing, salting, smoking, drying or canning. Food products categorized as processed meat include: sausages, hot dogs, salami, ham, cured bacon, salted and cured meat, corned beef, smoked meat, dried meat, beef jerky, canned meat.",
+  "processedMeatDefinition": "Processed meat is meat that has been preserved by curing, salting, smoking, drying or canning. Food products categorized as processed meat include sausages, hot dogs, salami, ham, cured bacon, salted and cured meat, corned beef, smoked meat, dried meat, beef jerky, canned meat and others.",
   "redMeat": "red meat",
-  "redMeatDefinition": "Red meat is meat such as beef or lamb, which is red in colour when raw and dark brown after it has been cooked.",
-  "unprocessedMeat": "unprocessed poultry",
-  "unprocessedMeatDefinition": "unprocessed poultry definition",
+  "redMeatDefinition": "Red meat is meat such as beef or lamb, which is red when raw and dark brown after it has been cooked.",
   "seafood": "seafood",
-  "seafoodDefinition": "seafood definition"
+  "seafoodDefinition": "Seafood refers to all fresh and salt water fish, crustaceans and shellfish."
 }

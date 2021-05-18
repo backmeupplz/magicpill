@@ -42,7 +42,7 @@ export const tiers: { [index: string]: TierDescription } = {
   },
   [Tier.gold]: {
     title: Tier.gold,
-    price: ['goldPrice1', 'unprocessedMeat', 'goldPrice2'],
+    price: ['goldPrice'],
     gradient: ['from-gold-semifull', 'to-gold-semitransparent'],
     benefits: [
       'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5216044',

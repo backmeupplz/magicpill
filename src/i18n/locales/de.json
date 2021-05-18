@@ -21,8 +21,7 @@
   "silverPrice1": "Vorheriges Level + Verzicht auf",
   "silverPrice2": "essen",
   "goldTitle": "Gold",
-  "goldPrice1": "Vorheriges Level + Verzicht auf",
-  "goldPrice2": "(Pescetarismus)",
+  "goldPrice": "Vorheriges Level + Verzicht auf unverarbeitetes Geflügel (Pescetarismus)",
   "platinumTitle": "Platin",
   "platinumPrice1": "Vorheriges Level + Verzicht auf Fisch und",
   "platinumPrice2": "(Lakto, Lakto-Ovo- und Ovo-Vegetarismus)",
@@ -59,8 +58,6 @@
   "processedMeatDefinition": "Fleisch, das durch Pökeln, Einsalzen, Räuchern, Trocknung oder Einmachen konserviert wurde. Zu den als verarbeitetes Fleisch eingestuften Lebensmitteln gehören: Wurstwaren, Schinken, Salami, Jerky, Speck, Hackfleischprodukte, Fleischkonserven",
   "redMeat": "rotes Fleisch",
   "redMeatDefinition": "Rotes Fleisch ist Fleisch wie Rind- oder Lammfleisch, das im rohen Zustand rot und nach dem Kochen dunkelbraun ist.",
-  "unprocessedMeat": "unverarbeitetes Geflügel",
-  "unprocessedMeatDefinition": "unprocessed poultry definition",
   "seafood": "Meeresfrüchte",
-  "seafoodDefinition": "seafood definition"
+  "seafoodDefinition": "Unter Meeresfrüchten versteht man alle Süß- und Salzwasserfische, Krustentiere und Schalentiere."
 }

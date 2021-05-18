@@ -21,8 +21,7 @@
   "silverPrice1": "Poprzedni poziom + nie jeść",
   "silverPrice2": " ",
   "goldTitle": "Złoto",
-  "goldPrice1": "Poprzedni poziom + nie jeść",
-  "goldPrice2": "(peskatarianizm)",
+  "goldPrice": "Poprzedni poziom + nie jeść nieprzetworzonego mięsa drobiowego (peskatarianizm)",
   "platinumTitle": "Platyna",
   "platinumPrice1": "Poprzedni poziom + nie jeść ryby i",
   "platinumPrice2": "(lakto, laktoowo i owowegetarianizm)",
@@ -59,8 +58,6 @@
   "processedMeatDefinition": "Mięso, które zostało przetworzone przez peklowanie, solenie, wędzenie, suszenie lub konserwowanie. Do produktów spożywczych zaliczanych do przetworzonych mięs należą: boczek, kiełbasy, parówki, szynka, salami, konserwy mięsne.",
   "redMeat": "czerwonego mięsa",
   "redMeatDefinition": "Mięso, takie jak wołowina lub jagnięcina, które ma czerwony kolor, gdy jest surowe, a ciemnobrązowe po ugotowaniu.",
-  "unprocessedMeat": "nieprzetworzonego mięsa drobiowego",
-  "unprocessedMeatDefinition": "unprocessed poultry definition",
   "seafood": "owoców morza",
-  "seafoodDefinition": "seafood definition"
+  "seafoodDefinition": "Owoce morza odnoszą się do wszystkich ryb słodkowodnych i słonowodnych, skorupiaków i mięczaków. "
 }
