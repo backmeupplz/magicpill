@@ -8,7 +8,8 @@ const container = classnames(
   'flex-row',
   'items-center',
   'justify-center',
-  'mb-4'
+  'mb-4',
+  'flex-wrap'
 )
 const languageButton = classnames(
   'py-2',
