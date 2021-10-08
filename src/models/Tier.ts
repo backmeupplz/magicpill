@@ -70,7 +70,7 @@ export const tiers: { [index: string]: TierDescription } = {
       'https://pubmed.ncbi.nlm.nih.gov/26853923',
       'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5216044',
       'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6089671',
-      'https://pubmed.ncbi.nlm.nih.gov/33303765',
+
       'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7692016',
     ],
   },
