@@ -33,7 +33,7 @@ function Footer() {
         rel="noreferrer"
         href="https://t.me/purplesoop"
       >
-        @purplesoop
+        @purplenoodlesoop
       </a>
       <FormattedMessage id="footer4" />
     </p>
