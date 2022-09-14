@@ -31,7 +31,7 @@ function Footer() {
         className={link}
         target="_blank"
         rel="noreferrer"
-        href="https://t.me/purplesoop"
+        href="https://t.me/purplenoodlesoop"
       >
         @purplenoodlesoop
       </a>
